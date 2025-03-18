@@ -78,6 +78,7 @@ const playVideoComponent = {
               shader: 'chromakey',
               color: '0.008 0.882 0',  // Warna untuk chroma key
             })
+            el.setAttribute('rotation', '90 0 0')
             playVideo()
           }
           playAudio()

@@ -1,9 +1,27 @@
+<div id="splashimage" style="display: none;">
+  <button id="start" style="display: none;">
+  </button>
+</div>
+
+<div style="position: relative;">
+  <div class="modal">
+  <img id="logo" src="/logo.png" />
+  <button id="close" class="close-btn">
+    close
+  </button>
+  </div>
+</div>
+
 <a-scene
   xrextras-gesture-detector
   landing-page
-  xrextras-loading
+  splash-image
+  xrextras-loading="
+  loadBackgroundColor: #fefefe;
+  cameraBackgroundColor: #5AC8FA;
+  loadAnimation: none"
   xrextras-runtime-error
-  xrweb="disableWorldTracking: true;">
+  xrweb="allowedDevices: any;">
   <a-assets>
     <img id="thumbnail" src="/thumbnail.png" />
     <img id="pause" src="/pause.png" />

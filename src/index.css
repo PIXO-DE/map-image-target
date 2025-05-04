@@ -66,3 +66,297 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+#loadBackground{
+  background-color: white;
+}
+#requestingCameraPermissions {
+  color: white !important;
+  background-color: white !important;
+}
+#requestingCameraIcon {
+  /* This changes the image from white to black */
+  filter: invert(1);
+}
+
+.prompt-box-8w {
+  background-color: white;
+  color: #00FF00;
+}
+.prompt-button-8w {
+  background-color: #A52D2F;
+}
+
+.button-primary-8w {
+  background-color: #A52D2F !important;
+}
+
+#image-center{
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  width: 85%;
+}
+
+#playPauseBtn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.position{
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#splashimage {
+  z-index: 998;
+  height: 100%;
+  width: 100vw;
+  background-color: white;
+  background-image: url('/splash-image.jpg');
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+#start {
+  /*z-index: 999;*/
+  /* width: 100vw;
+  height: auto;
+  padding: 30px;
+  position: absolute;
+  bottom: 15vh;
+  left: 0vw;
+  background-image: url('./assets/icons/button.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+  font-family: monospace;
+}
+
+.recorder-container {
+  z-index: 999;
+  position: fixed;
+  width: 20vmin;
+  height: 20vmin;
+  max-width: 10em;
+  max-height: 10em;
+  bottom: 1vmin;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s opacity;
+}
+
+.container-navigation{
+  display: flex;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+}
+
+.gradient-move { animation: gradient-move 10s linear infinite; }
+@keyframes gradient-move {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 100% 100%;
+	}
+}
+#gradient {
+  /* z-index: 9;
+  background-size: 400% 400%;
+  background-image: linear-gradient(140deg, #7611B6, #563BA4, #3A4AAA, #7611B6, #563BA4); */
+}
+.absolute-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.spinner {
+  width: 4rem;
+  height: 4rem;
+  border-top: 3px solid rgba(255,255,255, .5);
+  border-right: 3px solid transparent;
+  border-radius: 50%;
+  animation: rotation .8s linear infinite;
+}
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.fade-in { animation: fade-in 0.25s linear forwards; }
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+.fade-out { animation: fade-out 0.25s linear forwards; }
+@keyframes fade-out {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/* MAP SCENE UI */
+#ui-section {
+  position: absolute;
+  top: -200px;
+  width: max-content;
+  max-width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0px 0px 15px 15px;
+  background: white;
+  padding: 10px 30px;
+  z-index: 1;
+}
+#ui-section span {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+#ui-section img {
+  display: block;
+}
+#ui-section button {
+  padding: 10px 20px;
+  background-color: #81A719;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+#ui-section button:active {
+  background-color: #81A719;
+}
+#ui-section button:disabled {
+  background-color: #81A719;
+  opacity: 0.5;
+}
+#ui-section h3 {
+  margin: 0px 0px 8px 0px;
+  text-align: center;
+}
+.slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.slide-down {
+  animation: slide-down 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes slide-up {
+  0% {
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%, 200px);
+  }
+}
+@keyframes slide-down {
+  0% {
+    left: 50%;
+    transform: translate(-50%, 200px);
+  }
+  100% {
+    left: 50%;
+    transform: translate(-50%, 0px);
+  }
+}
+
+/* AR SCENE UI */
+#top-section {
+  position: absolute;
+  width: fit-content;
+  max-width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  z-index: 1;
+}
+#top-section button {
+  padding: 10px 20px;
+  background-color: #81A719;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.animation {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.button-image{
+  transition: 150ms;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: fit-content;
+  width: fit-content;
+  border-color: transparent;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  cursor: pointer;
+}
+
+.bottom-bar{
+  position: relative;
+  z-index: 999;
+}

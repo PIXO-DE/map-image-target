@@ -14,13 +14,13 @@ const Home = () => {
 
         <div className="flex flex-col md:flex-row gap-4 mt-4">
           <button
-            onClick={() => (window.location.href = '/ar')}
+            onClick={() => (window.location.href = '/wimmelbild/ar')}
             className="bg-red-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-800 transition"
           >
             Go To Map AR
           </button>
           <button
-            onClick={() => (window.location.href = '/quiz')}
+            onClick={() => (window.location.href = '/wimmelbild/quiz')}
             className="bg-red-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-800 transition"
           >
             Start Quiz

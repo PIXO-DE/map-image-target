@@ -14,7 +14,7 @@ const AR = () => {
           { name: "splash-image", val: splashImageComponent },
         ]}
       />
-      <Navigation to="/quiz" />
+      <Navigation to="/wimmelbild/quiz" />
     </>
   );
 };

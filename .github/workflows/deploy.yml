@@ -1,0 +1,42 @@
+name: Deploy React App
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20'  # Specify the Node.js version you need
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build the React app
+      run: npm run build  # Assuming your build script is defined as "build" in package.json
+
+    - name: Prepare SSH key
+      id: ssh-key
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+
+    - name: Add server to known_hosts
+      run: |
+        ssh-keyscan -H ${{ secrets.REMOTE_HOST }} >> ~/.ssh/known_hosts
+
+    - name: Upload dist to server
+      run: |
+        rsync -avz --delete ./dist/ ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+      env:
+        RSYNC_RSH: 'ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no'

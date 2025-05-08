@@ -66,21 +66,21 @@ const Navigation: React.FC<NavigationProps> = ({
   }, []);
 
   return (
-    <div className="flex flex-row  justify-between items-center fixed bottom-0 left-0 right-0 p-4 gap-4 z-50 ">
+    <div className="flex flex-row  justify-between items-center fixed bottom-0 left-0 right-0 p-1 gap-4 z-50 ">
       <button
         onClick={toggleAudio}
       >
         {isPlaying ? (
-           <img src={play} className="w-full h-[75px] object-cover" />
+           <img src={play} className="w-full h-[100px] object-contain" />
         ) : (
-          <img src={play} className="w-full h-[75px] object-cover"  />
+          <img src={play} className="w-full h-[100px] object-contain"  />
         )}
       </button>
       
       <button
         onClick={() => (window.location.href = to)}
       >
-        <img src={logo} className="w-full h-[100px] object-cover" />
+        <img src={logo} className="w-full h-[125px] object-contain" />
       </button>
 
     </div>

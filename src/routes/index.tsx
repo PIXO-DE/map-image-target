@@ -9,9 +9,9 @@ const AppRoutes: React.FC = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/ar" element={<AR />} />
-        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/wimmelbild/" element={<Home />} />
+        <Route path="/wimmelbild/ar" element={<AR />} />
+        <Route path="/wimmelbild/quiz" element={<Quiz />} />
       </Routes>
     </Router>
   );

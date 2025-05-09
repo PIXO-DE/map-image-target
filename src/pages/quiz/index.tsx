@@ -98,7 +98,7 @@ const Quiz: React.FC = () => {
         </h2>
   
         <div className="mb-6">
-          <p className="text-xl text-gray-700 font-semibold text-center">
+          <p className="text-xl text-gray-700 text-center">
             {questions[current].question}
           </p>
         </div>
@@ -108,7 +108,7 @@ const Quiz: React.FC = () => {
             const isSelected = selected === option;
   
             let buttonClass =
-              "w-auto text-left px-6 py-3 rounded-lg border text-lg font-medium transition duration-300";
+              "w-auto text-left px-6 py-3 rounded-lg border text-lg transition duration-300";
             if (isSelected) {
               buttonClass += isCorrect
                 ? " bg-green-500 text-white border-green-600"

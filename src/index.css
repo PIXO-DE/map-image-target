@@ -1,5 +1,48 @@
 @import "tailwindcss";
 
+/********** Fonts ***********/
+
+@font-face {
+    font-family: 'akko_bold';
+    src: url('./assets/fonts/akkopro-bold-webfont.woff2') format('woff2'),
+         url('./assets/fonts/akkopro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'akko_light';
+    src: url('./assets/fonts/akkopro-light-webfont.woff2') format('woff2'),
+         url('./assets/fonts/akkopro-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'akko_medium';
+    src: url('./assets/fonts/akkopro-medium-webfont.woff2') format('woff2'),
+         url('./assets/fonts/akkopro-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'akko_regular';
+    src: url('./assets/fonts/akkopro-regular-webfont.woff2') format('woff2'),
+         url('./assets/fonts/akkopro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'akko_regular';
+}
+
 a {
   font-weight: 500;
   color: #646cff;

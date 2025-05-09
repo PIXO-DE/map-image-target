@@ -87,6 +87,10 @@ h1 {
 
 .quizbg {
     background-image: url('/splash-image.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 100%;
+
 }
 
 #start {

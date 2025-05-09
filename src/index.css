@@ -86,6 +86,10 @@ h1 {
   background-color: #A52D2F !important;
 }
 
+.h-\[50px\] {
+    height:75px
+  }
+
 #image-center{
   left: 50%;
   transform: translate(-50%, 50%);

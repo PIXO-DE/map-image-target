@@ -55,9 +55,9 @@ const Navigation: React.FC<NavigationProps> = ({
         onClick={toggleAudio}
       >
         {isPlaying ? (
-           <img src={pauseIcon} className="w-full h-[100px] object-contain" />
+           <img src={pauseIcon} className="w-full h-[50px] object-contain" />
         ) : (
-          <img src={play} className="w-full h-[100px] object-contain"  />
+          <img src={play} className="w-full h-[50px] object-contain"  />
         )}
       </button>
       

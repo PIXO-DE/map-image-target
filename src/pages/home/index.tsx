@@ -1,4 +1,4 @@
-import logo from '/logo.png';
+
 
 const Home = () => {
   return (

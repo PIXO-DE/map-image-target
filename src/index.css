@@ -137,6 +137,7 @@ h1 {
 #splashimage h2 {
     color: var(--color-red-900);
     font-size: 1.6rem;
+    font-family: 'akko_medium';
 }
 
 .quizbg {

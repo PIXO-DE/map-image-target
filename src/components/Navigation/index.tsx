@@ -55,16 +55,16 @@ const Navigation: React.FC<NavigationProps> = ({
         onClick={toggleAudio}
       >
         {isPlaying ? (
-           <img src={pauseIcon} className="w-full button--nav object-contain" />
+           <img src={pauseIcon} className="button--nav object-contain" />
         ) : (
-          <img src={play} className="w-full button--nav object-contain"  />
+          <img src={play} className="button--nav object-contain"  />
         )}
       </button>
       
       <button
         onClick={() => (window.location.href = to)}
       >
-        <img src={logo} className="w-full button--nav object-contain" />
+        <img src={logo} className="button--nav object-contain" />
       </button>
     </div>
   );

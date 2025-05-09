@@ -134,9 +134,9 @@ h1 {
    padding: 0px 10px;   
 }
 
-#splashimage p {
-    text-align: center;
-   padding: 0px 10px;   
+#splashimage h2 {
+    color: var(--color-red-900);
+    font-size: 1.6rem;
 }
 
 .quizbg {

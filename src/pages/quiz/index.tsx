@@ -92,7 +92,7 @@ const Quiz: React.FC = () => {
 
   return (
     <div className="min-h-screen quizbg flex items-center justify-center px-4">
-      <div className="bg-white shadow-xl rounded-xl w-full max-w-2xl p-8">
+      <div className="w-full max-w-2xl p-8">
         <h2 className="text-2xl font-bold text-gray-800 mb-4 text-center">
           Frage {current + 1} von {questions.length}
         </h2>

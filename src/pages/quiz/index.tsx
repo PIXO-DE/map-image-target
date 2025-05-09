@@ -8,41 +8,39 @@ type Question = {
 
 const questions: Question[] = [
   {
-    question: "was ist auf def fahne der bauren abgebildet",
-    options: ["regenbogen", "Einhorn", "sonne"],
-    answer: "regenbogen",
+    question: "Was ist auf der Fahne der Bauern abgebildet?",
+    options: ["Regenbogen", "Einhorn", "Sonne"],
+    answer: "Regenbogen",
   },
   {
-    question: "wofur kampften die bauern im bauernkrieg",
-    options: ["urlaub", "freiheit", "ordnung"],
-    answer: "urlaub",
+    question: "Wofür kämpften die Bauern im Bauernkrieg?",
+    options: ["Urlaub", "Freiheit", "Ordnung"],
+    answer: "Freiheit",
   },
   {
-    question: "was wurde im muhlhauser rathaus gegrundet",
-    options: ["bauernverein", "weiger rat", "tanzschule"],
-    answer: "bauernverein",
+    question: "Was wurde im Mühlhäuser Rathaus gegründet?",
+    options: ["Bauernverein", "Ewiger Rat", "Tanzschule"],
+    answer: "Ewiger Rat",
   },
   {
-    question: "in welcher muhlhauser kirche predigte muntzer",
-    options: ["mairenkirche", "divi blasii-kirche", "allerheiligen-kirche"],
-    answer: "mairenkirche",
+    question: "In welcher Mühlhäuser Kirche predigte Müntzer?",
+    options: ["Marienkirche", "Divi Blasii-Kirche", "Allerheiligen-Kirche"],
+    answer: "Marienkirche",
   },
   {
-    question: "was wurde in der kornmarktkirche zu kanonenkugel geschomlzen",
-    options: ["kirchenglocken", "metalltore", "attare"],
-    answer: "attare",
+    question: "Was wurde in der Kornmarktkirche zu Kanonenkugel geschmolzen?",
+    options: ["Kirchenglocken", "Metalltore", "Altare"],
+    answer: "Kirchenglocken",
   },
   {
-    question: "wer ist Thomas muntzers Freund",
-    options: ["martin muller",
-      "Heinrich pfeiffer",
-      "Thomas Schmidt"],
-    answer: "martin muller",
+    question: "Wer ist Thomas Müntzers Freund?",
+    options: ["Martin Müller", "Heinrich Pfeiffer", "Thomas Schmidt"],
+    answer: "Heinrich Pfeiffer",
   },
   {
-    question: "in welche stadt zogen die bauern in die schlacht",
-    options: ["gotha", "Erfurt", "frankenhausen"],
-    answer: "gotha",
+    question: "In welche Stadt zogen die Bauern in die Schlacht?",
+    options: ["Gotha", "Erfurt", "Frankenhausen"],
+    answer: "Frankenhausen",
   },
 ];
 

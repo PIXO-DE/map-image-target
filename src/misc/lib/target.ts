@@ -26,6 +26,13 @@ const playVideoComponent = {
           a.play().catch((error) => {
             console.error('Error playing audio:', error)
           })
+          // Dispatch custom event saat audio mulai diputar
+          document.dispatchEvent(new CustomEvent('audioStarted', { 
+            detail: { 
+              audioElement: a,
+              audioId: this.data.audio
+            } 
+          }))
         }
       }
   
@@ -43,7 +50,16 @@ const playVideoComponent = {
       // Fungsi untuk menghentikan media (jika ada)
       const pauseMedia = () => {
         if (this.data.canstop) {
-          if (a) a.pause()
+          if (a) {
+            a.pause()
+            // Dispatch custom event saat audio dijeda
+            document.dispatchEvent(new CustomEvent('audioPaused', { 
+              detail: { 
+                audioElement: a,
+                audioId: this.data.audio
+              } 
+            }))
+          }
           if (v) v.pause()
           playing = false
         }
@@ -63,11 +79,47 @@ const playVideoComponent = {
       // Event listener untuk xrimagelost
       const hideImage = () => {
         pauseMedia()  // Menghentikan media saat gambar hilang
+  
+        // Dispatch custom event saat target hilang
+        document.dispatchEvent(new CustomEvent('targetLost', { 
+          detail: { 
+            targetElement: el,
+            audioId: this.data.audio
+          } 
+        }))
       }
   
       // Menambahkan event listener untuk xrimagefound dan xrimagelost
       this.el.sceneEl.addEventListener('xrimagefound', showImage)
       this.el.sceneEl.addEventListener('xrimagelost', hideImage)
+  
+      // Menambahkan event listener untuk custom event dari luar
+      document.addEventListener('playAllAudio', () => {
+        if (a && a.paused) {
+          playAudio()
+          playing = true
+        }
+      })
+  
+      document.addEventListener('pauseAllAudio', () => {
+        if (a && !a.paused) {
+          pauseMedia()
+        }
+      })
+  
+      // Menambahkan event listener untuk custom event yang spesifik untuk audio ini
+      document.addEventListener(`playAudio_${this.data.audio.replace('#', '')}`, () => {
+        if (a && a.paused) {
+          playAudio()
+          playing = true
+        }
+      })
+  
+      document.addEventListener(`pauseAudio_${this.data.audio.replace('#', '')}`, () => {
+        if (a && !a.paused) {
+          pauseMedia()
+        }
+      })
   
       // Tetap mempertahankan fungsi klik untuk kontrol manual pada elemen
       el.addEventListener('click', () => {

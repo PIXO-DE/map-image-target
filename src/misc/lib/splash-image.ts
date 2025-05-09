@@ -8,7 +8,7 @@ const splashImageComponent = {
     },
     init() {
       const splashimage = document.getElementById('splashimage');
-      splashimage.style.display = 'block';
+      splashimage.style.display = 'flex';
       const start = document.getElementById('start');
       start.style.display = 'block';
   
@@ -26,9 +26,9 @@ const splashImageComponent = {
         start.classList.add('hidden');
       };
   
-      setTimeout(() => {
-        start.click(); // Trigger click event on the start button after 3 seconds
-      }, 3000);
+      // setTimeout(() => {
+      //   start.click(); // Trigger click event on the start button after 3 seconds
+      // }, 3000);
       
       start.onclick = addXRWeb;
     },

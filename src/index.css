@@ -120,11 +120,8 @@ h1 {
   height: 100%;
   width: 100vw;
   background-color: white;
-  background-image: url('/splash-image.jpg');
+  /* background-image: url('/splash-image.jpg'); */
   position: absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   
 }
 

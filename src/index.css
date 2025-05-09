@@ -39,6 +39,10 @@
 
 }
 
+.font-bold {
+    font-family: 'akko_medium';
+}
+
 body {
     font-family: 'akko_regular';
 }
@@ -154,7 +158,6 @@ h1 {
 h2 {
   font-size: 1.3em;
   text-align: center;
-  font-family: monospace;
 }
 
 .recorder-container {

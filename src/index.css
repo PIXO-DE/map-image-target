@@ -129,6 +129,16 @@ h1 {
   
 }
 
+#splashimage p {
+    text-align: center;
+   padding: 0px 10px;   
+}
+
+#splashimage p {
+    text-align: center;
+   padding: 0px 10px;   
+}
+
 .quizbg {
     background-image: url('/quiz-image.jpg');
     background-repeat: no-repeat;

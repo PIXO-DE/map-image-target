@@ -84,6 +84,11 @@ h1 {
   background-size: contain;
   
 }
+
+.quizbg {
+    background-image: url('/splash-image.jpg');
+}
+
 #start {
   /*z-index: 999;*/
   /* width: 100vw;

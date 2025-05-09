@@ -88,9 +88,13 @@ h1 {
 .quizbg {
     background-image: url('/quiz-image.jpg');
     background-repeat: no-repeat;
-    background-position: 0%;
+    background-position: 0% 0%;
     background-size: 100% auto;
 
+}
+
+.quizbg button {
+    box-shadow: 1px 1px 10px #cdcdcd;
 }
 
 #start {

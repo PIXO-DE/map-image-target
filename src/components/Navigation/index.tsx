@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import play from "/aufgabe.png";
 import pauseIcon from "/aufgabe.png";
 import logo from "/quiz.png";
-import audioFile from "/m1.mp3";
+import audioFile from "/frage.mp3";
 
 interface NavigationProps {
   to: string;

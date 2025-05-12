@@ -152,6 +152,14 @@ h1 {
 
 }
 
+@media (orientation: landscape) {
+    .quizbg {
+        background-position: 50% 50%;
+        background-size: auto 100%;
+        background-color: #ded7c5;
+    }
+}
+
 .quizbg button {
     box-shadow: 1px 1px 10px #cdcdcd;
 }

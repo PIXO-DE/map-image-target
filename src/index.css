@@ -387,3 +387,7 @@ h2 {
   position: relative;
   z-index: 999;
 }
+
+#actionButton{
+  background-color: transparent;
+}

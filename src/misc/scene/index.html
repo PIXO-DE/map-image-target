@@ -1,7 +1,18 @@
-<div id="splashimage" class="flex flex-col w-full quizbg items-center justify-center gap-y-5">
+<div
+  id="splashimage"
+  class="flex flex-col w-full quizbg items-center justify-center gap-y-5"
+>
   <h2 class="">So funktioniert's</h2>
-  <p class="text-gray-700 text-lg">Entdecke versteckte Symbole, indem du mit deiner Kamera bestimmte Bereiche der Wimmelkarte erkundest – klicke sie an, um mehr zu erfahren!</p>
-  <button id="start" class="bg-red-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-800 transition"> Start</button>
+  <p class="text-gray-700 text-lg">
+    Entdecke versteckte Symbole, indem du mit deiner Kamera bestimmte Bereiche
+    der Wimmelkarte erkundest – klicke sie an, um mehr zu erfahren!
+  </p>
+  <button
+    id="start"
+    class="bg-red-900 text-white px-6 py-3 rounded-lg shadow-md hover:bg-red-800 transition"
+  >
+    Start
+  </button>
 </div>
 
 <a-scene
@@ -62,6 +73,10 @@
   >
   </a-camera>
 
+  <xrextras-capture-button capture-mode="photo"></xrextras-capture-button>
+  <xrextras-capture-config request-mic="false"></xrextras-capture-config>
+  <xrextras-capture-preview></xrextras-capture-preview>
+
   <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
 
   <a-light type="ambient" intensity="1"></a-light>
@@ -120,7 +135,6 @@
     </a-entity>
   </xrextras-named-image-target>
 
-
   <xrextras-named-image-target name="08">
     <a-entity
       play-video="audio: #sound08; thumb: #thumbnail; canstop: true; "
@@ -147,9 +161,6 @@
     >
     </a-entity>
   </xrextras-named-image-target>
-
-  
-
 
   <xrextras-named-image-target name="12">
     <a-entity
@@ -223,7 +234,6 @@
     </a-entity>
   </xrextras-named-image-target>
 
-
   <xrextras-named-image-target name="21">
     <a-entity
       play-video="audio: #sound21; thumb: #thumbnail; canstop: true; "
@@ -269,7 +279,6 @@
     </a-entity>
   </xrextras-named-image-target>
 
-
   <xrextras-named-image-target name="27">
     <a-entity
       play-video="audio: #sound27; thumb: #thumbnail; canstop: true; "
@@ -296,7 +305,6 @@
     >
     </a-entity>
   </xrextras-named-image-target>
-
 
   <xrextras-named-image-target name="1">
     <a-entity

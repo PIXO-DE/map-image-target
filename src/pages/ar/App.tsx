@@ -4,7 +4,7 @@ import { AFrameScene } from "../../templates/aframe.template";
 import html from "../../misc/scene/index.html?raw";
 import { splashImageComponent } from "../../misc/lib/splash-image";
 import Navigation from "../../components/Navigation";
-import logo from '../../assets/share.png';
+import logo from '../../assets/logo.png';
 
 const AR = () => {
   const [inDom, setInDom] = useState(false);
@@ -51,8 +51,8 @@ const AR = () => {
         (actionButtonImg as HTMLImageElement).src = logo // <-- ganti path ini
   
         // (Opsional) Ganti ukuran atau style gambar
-        actionButtonImg.style.width = '75px';
-        actionButtonImg.style.height = '75px';
+        actionButtonImg.style.width = '40px';
+        actionButtonImg.style.height = '40px';
   
         clearInterval(interval);
       }
